@@ -3,7 +3,9 @@ var router = express.Router()
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('Nothing here. Check out other routes')
+  res.json({
+    foo: 'bar',
+  })
 })
 
 module.exports = router
